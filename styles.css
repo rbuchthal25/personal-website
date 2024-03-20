@@ -25,5 +25,37 @@ body {
 }
 
 .topnav a:hover {
-    background-color: lightpink;
+    background-color: #c8bda8;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.header-figure {
+    padding-bottom: 30px;
+}
+
+.contact-links {
+    width: 50px;
+    height: auto;
+}
+
+#film-button {
+    color: Black;
+    padding: 5px;
+    background-color: #c8bda8;
+    border-color: #b7ac9a;
+}
+
+.topic {
+    padding-left: 5px;
+}
+
+.topic-text {
+    padding-left: 5px;;
 }
