@@ -16,7 +16,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     background-color: #f5f5f5;
-    padding-top: 20px; /* Add space from the top */
+    padding-top: 20px; 
 }
 
 /* Heading Styling */
