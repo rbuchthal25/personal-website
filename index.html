@@ -1,59 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Robin Buchthal</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
 </head>
 <body>
-    <div class="topnav">
-        <a href="#me" class="about-me"><b>About me</b></a>
-        <a href="#exp" class="experience"><b>Experience</b></a>
-        <a href="#proj" class="projects"><b>Projects</b></a>
-        <a href="#film" class="film"><b>Film</b></a>
-        <a href="#contact" class="contact-link"><b>Contact</b></a>
-    </div>
-    <figure class="header-figure"> 
-        <img src="images/header.jpg" alt="owen" width="100%" height="600">
-        <figcaption>Taken by Owen Chan</figcaption>
-    </figure>
-    <h1 id="me" class="topic">About me</h1>
-    <p class="topic-text">My name is Robin</p>
+    <nav id="desktop-nav">
+        <div class="logo">Robin Buchthal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#film">Film</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Robin Buchthal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+                <li><a href="#film" onclick="toggleMenu()">Film</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Robin Buchthal Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Robin Buchthal</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/robin-buchthal-9a53a8249/'">
+                <img src="./assets/github.png" 
+                alt="My Github Profile" 
+                class="icon"
+                onclick="location.href='https://github.com/rbuchthal25'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More!</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.png" 
+                alt="Profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" 
+                        alt="Experience Icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>SAIC<br>Software Developer Intern</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/education.png" 
+                        alt="Education Icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Brandeis University<br>B.A. Bachelors Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Aloha, my name is Robin Buchthal, a senior at Brandeis University studying 
+                        Computer Science with a minor in Mathematics.  
+                        I'm passionate about solving complex problems and building 
+                        innovative solutions through technology. <br><br>
 
-    <h1 id="exp" class="topic">Experience</h1>
-    <p class="topic-text">Python Teaching Assistant and Grader</p>
-    <p class="topic-text">Public Relations Officer</p>
-    <p class="topic-text">Multivariable Calculus and Calc 1 Grader</p>
-    <p class="topic-text">Web Developer & Digital Media Coordinator</p>
+                        This past summer, I interned at SAIC as a Software Developer Intern, 
+                        where I honed my skills in React Query, Redux, and CI/CD pipelines, 
+                        contributing to streamlining development processes. I'm eager to explore opportunities 
+                        that allow me to apply my skills, grow as a developer, and make meaningful contributions. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>OOP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Agile Development Process</h3>
+                                <p>Internship Experience</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
 
-    <h1 id="proj" class="topic">Projects</h1>
-    <p class="topic-text">Image Classification AI Tool</p>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Work Experience</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Software Developer Intern</h3>
+                                <p>SAIC</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Python Teaching Assistant</h3>
+                                <p>Brandeis University</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Calc 1 & 3 Grader</h3>
+                                <p>Brandeis University</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Resturant Hostest</h3>
+                                <p>California Pizza Kitchen</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Web Dev Team & Social Media Chair</h3>
+                                <p>Bit by Bit Brandeis</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Public Relations Office</h3>
+                                <p>BETA</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="film">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">Film</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.png" 
+                alt="Profile picture" 
+                class="about-pic">
+            </div>
+            <div class="film__text-container">
+                <p>
+                    I’ve recently discovered a love for photography as I find it to be my
+                    creative outlet allowing me to see the world differently. 
+                    What I enjoy most, though, is the opportunity to connect with others,
+                    whether it’s capturing moments together or exchanging ideas. 
 
-    <h1 id="film" class="topic">Film</h1>
-    <p class="topic-text">Very new</p>
-    <p class="topic-text">35 mm</p>
-    <button id="film-button" type="button">Images</button>
+                    <br> 
+                    <br> 
+                    
+                    I've still got a lot to learn, but feel free to check out some of photos! 
 
-    <h1 id="contact" class="topic">Contact me</h1>
-    <a href="https://www.linkedin.com/in/robinbuchthal/" target="_blank">
-        <img src="/images/linkedin-logo.png" alt="linkedin" class="contact-links">
-    </a>
-    <a href="https://github.com/rbuchthal25" target="_blank">
-        <img src="/images/github-logo.png" alt="git" class="contact-links">
-    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-    <script> <!-- smooth scroll -->
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-        
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-
+                    <a href="film.html" target="_blank" class="button">
+                        FILM PHOTOS
+                    </a>
+                </p>
+        </div>
+    </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:rbuchthal25@brandeis.edu?subject=Inquiry&body=Hi Robin,%0D%0A%0D%0AI wanted to reach out regarding...">
+                RBuchthal25@Brandeis.edu
+              </a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/robin-buchthal-9a53a8249/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#film">Film</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Robin Buchthal. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
