@@ -32,6 +32,13 @@
 }
 .avatar-placeholder svg { opacity: 0.3; }
 
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This crops the image to fill the box without stretching */
+  border-radius: 12px; /* Matches the placeholder corner roundness */
+}
+
 .about-bio h1 { margin-bottom: 20px; }
 .about-bio p  { margin-bottom: 16px; }
 
