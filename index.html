@@ -80,27 +80,27 @@
       <p class="section-label">Explore</p>
       <div class="home-cards">
         <div class="home-card" onclick="showPage('about')">
-          <div class="card-icon">👤</div>
+          <!-- <div class="card-icon">👤</div> -->
           <div class="card-title">About</div>
-          <p style="font-size:0.85rem; margin-top:6px;">Background, education, and the things that drive me.</p>
+          <p style="font-size:0.85rem; margin-top:6px;">Background and skills</p>
           <span class="card-arrow">↗</span>
         </div>
         <div class="home-card" onclick="showPage('experience')">
-          <div class="card-icon">💼</div>
+          <!-- <div class="card-icon">💼</div> -->
           <div class="card-title">Experience</div>
-          <p style="font-size:0.85rem; margin-top:6px;">Where I've worked and what I've built along the way.</p>
+          <p style="font-size:0.85rem; margin-top:6px;">Where I've worked.</p>
           <span class="card-arrow">↗</span>
         </div>
         <div class="home-card" onclick="showPage('projects')">
-          <div class="card-icon">🛠</div>
+          <!-- <div class="card-icon">🛠</div> -->
           <div class="card-title">Projects</div>
-          <p style="font-size:0.85rem; margin-top:6px;">Personal and professional work I'm proud of.</p>
+          <p style="font-size:0.85rem; margin-top:6px;">Personal and professional projects.</p>
           <span class="card-arrow">↗</span>
         </div>
         <div class="home-card" onclick="showPage('blog')">
-          <div class="card-icon">📷</div>
+          <!-- <div class="card-icon">📷</div> -->
           <div class="card-title">Blog</div>
-          <p style="font-size:0.85rem; margin-top:6px;">Photos, travels, thoughts, and things I find interesting.</p>
+          <p style="font-size:0.85rem; margin-top:6px;">My life.</p>
           <span class="card-arrow">↗</span>
         </div>
       </div>
@@ -138,16 +138,11 @@
           <br>
           <!-- EDIT: your bio paragraphs -->
           <p>
-            Hi! I'm Robin, originally from Oahu, HI but am currently based in Boston, MA. 
-            I am finishing up my MS degree in Data Science at Boston University and will be graduating this upcoming May 2026.
-          </p>
-          <br>
-          <p>
-            In my free time, I enjoy photography, rock climbing, pottery, and exploring other cool new hobbies.
-          </p>
-          <br>
-          <p>
-            I'm currently open to new roles and am always happy to connect, so feel free to reach out!
+            Hi, I'm Robin! I grew up on Oahu, moved to Boston for grad school, 
+            and am wrapping up my MS in Data Science at BU this May (2026). 
+            When I'm not working, you'll find me rock climbing, shooting photos, cooking,
+            or deep in whatever new thing has caught my attention. 
+            I'm currently looking for new roles — I'd love to connect.
           </p>
         </div>
 
@@ -220,15 +215,14 @@
       <hr class="divider">
 
       <!-- Interests -->
-      <div class="about-section">
+      <!-- <div class="about-section">
         <p class="section-label">Beyond Code</p>
         <h2>Interests & Hobbies</h2>
         <br>
-        <!-- EDIT: describe your interests -->
         <p>
           Check out my <span style="color:var(--accent); cursor:pointer; text-decoration:underline;" onclick="showPage('blog')">blog</span>!
         </p>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -374,7 +368,7 @@
     <div class="container">
       <p class="section-label">Projects</p>
       <h1>Things I've<br><em style="font-family:var(--serif); font-style:italic; color:var(--accent)">built.</em></h1>
-      <p style="margin-top:12px;">A selection of personal and professional projects. More on GitHub.</p>
+      <!-- <p style="margin-top:12px;">A selection of personal and professional projects. More on GitHub.</p> -->
 
       <div class="projects-grid">
 
@@ -383,29 +377,27 @@
         <div class="project-card featured">
           <div class="project-img">
             <div class="project-img-inner">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <rect x="3" y="3" width="18" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
-              </svg>
-              Add screenshot here
+            </div>
+            <div>
+              <img src="assets/spark.png" alt="Your Name" class="avatar-img">
             </div>
           </div>
           <div class="project-body">
-            <span class="tag" style="margin-bottom:16px; display:inline-block;">Featured</span>
-            <div class="project-name">Your Flagship Project</div>
+            <div class="project-name">CISS: Colombian Extraditions to the US (2000-2020)</div>
             <p class="project-desc">
-              A detailed description of your most impressive project. What problem does it solve?
-              Who uses it? What's the scale? What were the interesting technical challenges?
+              Developed an end-to-end NLP pipeline using LangGraph and Spanish BERT to automate the 
+              extraction and classification of defense attorneys from 2,700 Colombian extradition cases, 
+              achieving 97% accuracy through sophisticated prompt engineering and state-machine logic.
             </p>
             <div class="exp-tags" style="margin-bottom:20px;">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">AWS</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Benchmarking</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">↗ Live Demo</a>
-              <a href="#" class="project-link">⌥ GitHub</a>
+              <a href="https://github.com/BU-Spark/ds-ciss-colombian-extradition/blob/fa25-team-b-dev/fa25-team-b/README.md" 
+              target="_blank" 
+              class="project-link">⌥ GitHub</a>
             </div>
           </div>
         </div>
@@ -415,96 +407,24 @@
         <div class="project-card">
           <div class="project-img">
             <div class="project-img-inner">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-              Screenshot
+            </div>
+            <div>
+              <img src="assets/emnist.jpg" alt="Your Name" class="avatar-img">
             </div>
           </div>
           <div class="project-body">
-            <div class="project-name">Project Two</div>
-            <p class="project-desc">Short, punchy description. What it does and why it's interesting.</p>
+            <div class="project-name">EMNIST Classifier</div>
+            <p class="project-desc">Engineered a convolutional neural network (CNN) in PyTorch to 
+              classify handwritten characters from the EMNIST dataset.</p>
             <div class="exp-tags" style="margin-bottom:14px;">
-              <span class="tag">Python</span>
-              <span class="tag">Flask</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Machine Learning</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">↗ Demo</a>
-              <a href="#" class="project-link">⌥ GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <div class="project-img-inner">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 8v4l3 3"/>
-              </svg>
-              Screenshot
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-name">Project Three</div>
-            <p class="project-desc">Short, punchy description. What it does and why it's interesting.</p>
-            <div class="exp-tags" style="margin-bottom:14px;">
-              <span class="tag">TypeScript</span>
-              <span class="tag">GraphQL</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">↗ Demo</a>
-              <a href="#" class="project-link">⌥ GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <div class="project-img-inner">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-              Screenshot
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-name">Project Four</div>
-            <p class="project-desc">Short, punchy description. What it does and why it's interesting.</p>
-            <div class="exp-tags" style="margin-bottom:14px;">
-              <span class="tag">Go</span>
-              <span class="tag">Docker</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">⌥ GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-img">
-            <div class="project-img-inner">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                <line x1="8" y1="21" x2="16" y2="21"/>
-                <line x1="12" y1="17" x2="12" y2="21"/>
-              </svg>
-              Screenshot
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-name">Project Five</div>
-            <p class="project-desc">Short, punchy description. What it does and why it's interesting.</p>
-            <div class="exp-tags" style="margin-bottom:14px;">
-              <span class="tag">React Native</span>
-              <span class="tag">Firebase</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">↗ App Store</a>
-              <a href="#" class="project-link">⌥ GitHub</a>
+              <a href="https://github.com/EfrenHaskell/EMNISTclassifier" 
+              target="_blank" 
+              class="project-link">⌥ GitHub</a>
             </div>
           </div>
         </div>
@@ -512,7 +432,7 @@
       </div><!-- /projects-grid -->
 
       <div style="text-align:center; margin-top:40px;">
-        <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline">View All on GitHub →</a>
+        <a href="https://github.com/rbuchthal25" target="_blank" class="btn btn-outline">View All on GitHub →</a>
       </div>
 
     </div>
@@ -521,11 +441,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-name">Your Name</span>
+        <span class="footer-name">Robin Buchthal</span>
         <ul class="footer-links">
-          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:you@email.com">Email</a></li>
+          <li><a href="https://github.com/rbuchthal25" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/robinbuchthal" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:rbuchthal@gmail.com">Email</a></li>
         </ul>
         <span class="footer-copy">© 2026</span>
       </div>
@@ -541,8 +461,8 @@
   <div class="blog-wrapper">
     <div class="container">
       <p class="section-label">Blog</p>
-      <h1>Writing &<br><em style="font-family:var(--serif); font-style:italic; color:var(--accent)">musings.</em></h1>
-      <p style="margin-top:12px;">Photos I've taken, places I've been, things I find interesting. No particular schedule.</p>
+      <h1>Robin's<br><em style="font-family:var(--serif); font-style:italic; color:var(--accent)">Adventures!</em></h1>
+      <p style="margin-top:12px;">Photos I've taken, places I've been, things I find interesting.</p>
 
       <!-- FEATURED POST -->
       <!-- EDIT: Replace .blog-featured-img content with <img src="assets/blog/post1.jpg"> -->
@@ -589,95 +509,12 @@
           </div>
         </div>
 
-        <div class="blog-card">
-          <div class="blog-card-img">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5"/>
-              <path d="M2 12l10 5 10-5"/>
-            </svg>
-            Illustration
-          </div>
-          <div class="blog-card-body">
-            <span class="tag">Tech</span>
-            <p class="blog-meta" style="margin:8px 0;">Jan 2026</p>
-            <h3>What I Learned Building [Project]</h3>
-            <p>The technical and non-technical lessons from shipping something real.</p>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card-img">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 8v4l3 3"/>
-            </svg>
-            Photo
-          </div>
-          <div class="blog-card-body">
-            <span class="tag">Life</span>
-            <p class="blog-meta" style="margin:8px 0;">Dec 2025</p>
-            <h3>Year in Review: 2025</h3>
-            <p>Highlights, lowlights, and what I'm carrying into next year.</p>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card-img">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-            </svg>
-            Photo
-          </div>
-          <div class="blog-card-body">
-            <span class="tag">Travel</span>
-            <p class="blog-meta" style="margin:8px 0;">Oct 2025</p>
-            <h3>Trip to [Destination]</h3>
-            <p>Notes from the road and the best spots I found.</p>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card-img">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-            </svg>
-            Photo
-          </div>
-          <div class="blog-card-body">
-            <span class="tag">Reading</span>
-            <p class="blog-meta" style="margin:8px 0;">Sep 2025</p>
-            <h3>Books That Changed How I Think</h3>
-            <p>A short list with honest takes.</p>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card-img">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <polyline points="21 15 16 10 5 21"/>
-            </svg>
-            Photo
-          </div>
-          <div class="blog-card-body">
-            <span class="tag">Photography</span>
-            <p class="blog-meta" style="margin:8px 0;">Aug 2025</p>
-            <h3>Film Roll No. 1</h3>
-            <p>First experiment with analog photography. Here's what survived.</p>
-          </div>
-        </div>
-
       </div><!-- /blog-grid -->
 
-      <div class="blog-add-note">
+      <!-- <div class="blog-add-note">
         <p style="font-size:1.1rem;">✍️</p>
         <p>Add more posts by duplicating a <code>.blog-card</code> block in <strong>index.html</strong> and dropping in your photo.</p>
-      </div>
+      </div> -->
 
     </div>
   </div>
@@ -685,11 +522,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-name">Your Name</span>
+        <span class="footer-name">Robin Buchthal</span>
         <ul class="footer-links">
-          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-          <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-          <li><a href="mailto:you@email.com">Email</a></li>
+          <li><a href="https://github.com/rbuchthal25" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/robinbuchthal" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:rbuchthal@gmail.com">Email</a></li>
         </ul>
         <span class="footer-copy">© 2026</span>
       </div>
