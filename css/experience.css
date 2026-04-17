@@ -35,7 +35,7 @@
   content: '';
   position: absolute;
   left: 114px;
-  top: 6px;
+  top: 8px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -48,8 +48,9 @@
   font-size: 0.78rem;
   color: var(--text-muted);
   text-align: right;
-  padding-top: 2px;
+  padding-top: 5px;
   line-height: 1.4;
+  margin-right: 10px;
 }
 
 /* ── Job card ── */
